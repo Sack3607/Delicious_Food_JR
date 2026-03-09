@@ -3,5 +3,3 @@ uvicorn
 requests
 beautifulsoup4
 cors
-os
-dotenv
