@@ -1,0 +1,206 @@
+.productos{
+padding:60px 20px;
+text-align:center;
+}
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.producto{
+
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.producto img{
+width:100%;
+border-radius:10px;
+}
+
+.producto span{
+display:block;
+font-size:20px;
+margin:10px 0;
+font-weight:bold;
+}
+
+.producto button{
+
+background:#16b314;
+border:none;
+color:white;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+
+/* BOTON CARRITO */
+
+.carrito-icono{
+
+position:fixed;
+bottom:25px;
+right:25px;
+background:#ff6b00;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+
+}
+
+
+/* VENTANA CARRITO */
+
+.carrito{
+
+position:fixed;
+top:0px;
+right:-350px;
+width:320px;
+height:100%;
+background:white;
+padding:20px;
+box-shadow:-5px 0 15px rgba(0,0,0,0.3);
+transition:0.4s;
+z-index: 9999;
+
+}
+
+.carrito.activo{
+right:0;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+border-bottom:1px solid #ddd;
+padding-bottom:5px;
+}
+
+/* ===============================
+ANIMACIÓN CUANDO SE AGREGA PRODUCTO
+=================================*/
+
+.producto button:active{
+background: #06a203;
+transform:scale(0.9);
+}
+
+.producto button{
+transition:0.2s;
+}
+
+
+
+/* ===============================
+BOTONES + Y - DEL CARRITO
+=================================*/
+
+.item button{
+
+background:#43bf0e;
+border:none;
+color:white;
+padding:4px 10px;
+margin:2px;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+transition:0.2s;
+
+}
+
+.item button:hover{
+background:#329f04;
+transform:scale(1.1);
+}
+
+
+
+/* ===============================
+BOTON CERRAR CARRITO
+=================================*/
+
+.cerrar-carrito{
+
+background:#333;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+
+}
+
+.cerrar-carrito:hover{
+background:#000;
+}
+
+
+
+/* ===============================
+FONDO OSCURO CUANDO SE ABRE CARRITO
+=================================*/
+
+.fondo-oscuro{
+
+position:fixed;
+top:70px;
+left:0;
+width:78.9%;
+height:91%;
+background:rgba(55,55,55,0.5);
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+
+}
+
+.fondo-oscuro.activo{
+
+opacity:1;
+pointer-events:all;
+
+}
+
+
+
+/* ===============================
+ANIMACIÓN PRODUCTO AGREGADO
+=================================*/
+
+.animacion-agregado{
+
+animation:agregado 0.4s;
+
+}
+
+@keyframes agregado{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.2);
+}
+
+100%{
+transform:scale(1);
+}
+
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/b801e4bdde.js" crossorigin="anonymous"></script>
+
+<title>Delicious Food JR S.A.S</title>
+
+<link rel="stylesheet" href="../css/Estilo.css">
+<link rel="stylesheet" href="../css/chatbot.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+
+<header>
+
+<nav>
+
+<img class="Logo1" src="../assets/img/Logo2.png" alt="">
+
+<ul id="nav-menu">
+
+<li><a href="../pages/index.html">Inicio</a></li>
+
+<li>
+<details>
+<summary>Etapa De Ejecucion</summary>
+
+<a href="fase2.html#organigrama"><summary class="informacion-2">Jerarquizacion de la empresa</summary></a>
+<a href="fase2.html#mapa"><summary class="informacion-2">MAPA DE PROCESOS</summary></a>
+<a href="#manual"><summary class="informacion-2">MANUAL DE FUNCIONES</summary></a>
+<a href="plan.html#plan"><summary class="informacion-2">PlAN DE CAPACITACION</summary></a>
+<a href="chequeo.html#chequeo"><summary class="informacion-2">INFORME FINANCIERO</summary></a>
+<a href="instructivo.html#archivo"><summary class="informacion-2">INSTRUCTIVO DE ORGANIZACION <br> DE ARCHIVOS</summary></a>
+
+</details>
+</li>
+</ul>
+
+</nav>
+
+<div class="hamburger" id="hamburger">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="inicio" class="hero">
+
+<video autoplay loop muted>
+<source src="../assets/video/perro.mp4" type="video/mp4">
+Tu navegador no soporta videos HTML5.
+</video>
+
+<div class="overlay">
+
+<h1>
+Bienvenidos a <br>
+DELICIOUS FOOD JR S.A.S
+</h1>
+
+<p>
+Comprometidos con la calidad y el bienestar de las mascotas
+a través de snacks naturales e innovadores.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= MATRIZ FODA ================= -->
+
+
+
+<!-- ================= MATRIZ MPC ================= -->
+
+<section id="manual">
+
+<div class="section-container">
+
+<h2 class="section-title">MANUAL DE FUNCIONES</h2>
+
+<div class="info-box info-box-3">
+<iframe src="../archivos/MANUAL DE FUNCIONES DELICIOUS FOOD.pdf" width="100%" height="600px"></iframe>
+
+<div id="visor" onclick="cerrarImagen()">
+  <img id="imagenGrande">
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACTO ================= -->
+
+<section id="contacto">
+
+<div class="section-container">
+
+<h2 class="section-title">Contacto</h2>
+
+<div class="contact-info">
+
+<p><strong>Dirección:</strong> Carrera 81D #40D-13sur, Bogotá - Colombia</p>
+<p><strong>Teléfono:</strong> +57 321 286 52 88</p>
+<p><strong>Email:</strong> deliousfood531@gmail.com</p>
+
+</div>
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Tu nombre" required>
+<input type="email" placeholder="Tu email" required>
+
+<textarea rows="5" placeholder="Tu mensaje" required></textarea>
+
+<button type="submit">Enviar Mensaje</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MAPA ================= -->
+
+<center>
+
+<iframe class="mapa"
+src="https://www.google.com/maps/embed?...">
+</iframe>
+
+</center>
+
+<!-- ================= REDES SOCIALES ================= -->
+
+<div class="redes-sociales">
+
+<a href="https://www.tiktok.com/@delious.food1?_r=1&_t=ZS-94T5HVV13DE" class="tiktok"><i class="fa-brands fa-tiktok" style="color: rgb(255, 255, 255);"></i></a>
+
+<a href="https://www.facebook.com/share/18GV9yu7vv/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+
+<a href="https://www.instagram.com/deliciousfood6360?utm_source=qr&igsh=ZnRxN2RtZHZ1b25r" class="instagram"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+
+</div>
+
+<!-- ================= CHATBOT ================= -->
+<!-- BOTON DEL CHAT -->
+<button id="chatbot-btn"><i class="fa-solid fa-message" style="color: rgb(255, 255, 255);"></i></button>
+
+<!-- CHAT -->
+<div id="chatbot">
+
+    <div class="chat-header">
+        Asistente Ayuda
+        <span id="cerrar">✖</span>
+    </div>
+
+    <div class="chat-body" id="chat-body">
+
+        <div class="bot-msg">
+            Hola 👋<br>
+            ¿Cuál es tu pregunta?
+        </div>
+
+    </div>
+
+    <div class="chat-footer">
+
+        <input type="text" id="mensaje" placeholder="Escribe tu pregunta">
+
+        <button onclick="enviarMensaje()">➤</button>
+
+    </div>
+
+</div>
+
+
+<script src="../js/chatbot.js"></script>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+© 2025 DELICIOUS FOOD JR S.A.S.
+Todos los derechos reservados.
+</p>
+
+</footer>
+
+<script src="../js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+
+/* ================= RESET GENERAL ================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+summary{
+  list-style:none;
+}
+
+body{
+  font-family:"Big Shoulders Stencil",sans-serif;
+  background:#f4f4f4;
+  line-height:1.6;
+  color:#333;
+
+  background-image:url("../assets/img/logo3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* ================= PARRAFOS ================= */
+
+p {
+  font-size: 20px;
+}
+.p-subtitle {
+  color: #329835;
+}
+.p-subtitle-2 {
+  color: #329835;
+  font-size: 19pt;
+}
+/* ================= HEADER / NAV ================= */
+
+header{
+  position:fixed;
+  width:100%;
+  padding:10px 20px;
+  z-index:1000;
+
+  background:rgba(0,0,0,0.7);
+  background-image:url(/Imagenes/ondoNav2.jpg);
+  background-size:500px 200px;
+  background-color:rgba(55,55,55,0.5);
+  background-blend-mode:multiply;
+}
+
+.Logo1{
+  display: block;
+  clear: none;
+  float: left;
+  width: 60px;
+  height: 50px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+}
+
+nav ul li{
+  margin:0 15px;
+  margin-top:13px;
+}
+
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:1.2rem;
+  transition:color .3s;
+}
+
+nav ul li a:hover{
+  color:#329835;
+}
+
+details{
+  color:#fff;
+  font-size:1.2rem;
+  transition:color .3s;
+}
+
+details:hover{
+  color:#329835;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero video{
+  position:absolute;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  transform:translate(-50%,-50%);
+  z-index:-1;
+  filter:brightness(70%);
+}
+
+.hero .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  color:#fff;
+  padding:0 20px;
+
+  animation:fadeIn 2s ease-in;
+}
+
+.hero h1{
+  font-size:3rem;
+  margin-bottom:20px;
+  text-shadow:2px 2px 4px rgba(0,0,0,.6);
+}
+
+.hero p{
+  font-size:1.2rem;
+  max-width:700px;
+  text-shadow:1px 1px 3px rgba(0,0,0,.6);
+}
+
+
+/* ================= HOVERS ================= */
+
+h1:hover{
+  color:#329835;
+}
+
+h2:hover{
+  transition:scale .3s;
+  scale:1.10;
+}
+
+p:hover{
+  transition:scale .3s;
+  scale:1.10;
+}
+
+/* ================= IMAGENES ================= */
+
+.imagen{
+  width:200px;
+  cursor:pointer;
+}
+
+#visor{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+#visor img{
+  width: 90vw;
+  height: 80vh;
+}
+.info-box-2 img {
+  height: 400px;
+}
+
+.info-box-3 {
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box-3 embed{
+  width: 250px;
+}
+
+/* ================= ANIMACIONES ================= */
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+
+/* ================= SECCIONES ================= */
+
+section{
+  padding:80px 20px;
+}
+
+.section-container{
+  text-align:center;
+  max-width:1100px;
+  margin:auto;
+}
+
+.section-title{
+  margin-bottom:40px;
+  font-size:2rem;
+  color:#4CAF50;
+}
+
+.content{
+  margin-bottom:20px;
+  text-align:justify;
+}
+
+
+/* ================= INFO BOX ================= */
+
+.info-box{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.info-box img{
+  max-width:100%;
+  width:400px;
+  margin:10px;
+  border-radius:8px;
+  transition:transform .3s;
+}
+
+.info-box img:hover{
+  transform:scale(1.05);
+}
+
+.info-box .text{
+  flex:1;
+  padding:20px;
+}
+
+.image2{
+  height:400px;
+}
+
+
+/* ================= CONTACTO ================= */
+
+.contact-info{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.contact-info p{
+  margin:10px 0;
+}
+
+.contact-form{
+  max-width:600px;
+  margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+
+.contact-form button{
+  background:#4CAF50;
+  color:#fff;
+  padding:10px 20px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#45a049;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#222;
+  color:#fff;
+}
+
+
+/* ================= VIDEO ================= */
+
+.video-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:40px 0;
+}
+
+.video-section video{
+  width:100%;
+  max-width:550px;
+  border-radius:12px;
+  box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+.titulo4{
+  text-align:center;
+  font-size:30px;
+}
+
+
+/* ================= REDES SOCIALES FLOTANTES ================= */
+
+.redes-sociales{
+
+  position:fixed;
+  left:15px;
+  top:50%;
+
+  transform:translateY(50%);
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+  z-index:2000;
+}
+
+.redes-sociales a{
+
+  width:45px;
+  height:45px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+
+  border-radius:50%;
+
+  transition:transform .3s;
+}
+
+.redes-sociales a:hover{
+  transform:scale(1.15);
+}
+
+.facebook{
+  background:#1877F2;
+    box-shadow:0 6px 10px rgba(31, 83, 255, 0.495),inset 0 2px 3px rgba(37, 55, 253, 0.404)
+}
+.instagram{
+  background:#E1306C;
+  box-shadow:0 6px 10px rgba(255, 23, 139, 0.422),inset 0 2px 3px rgba(255, 98, 208, 0.2)
+}
+.tiktok{
+  background:#000;
+  box-shadow:0 6px 10px rgba(0, 0, 0, 0.527),inset 0 2px 3px rgba(46, 46, 46, 0.432);
+}
+.blog{
+  background:#fd690c;
+  box-shadow:0 6px 10px rgba(244, 94, 0, 0.769),inset 0 2px 3px rgba(243, 95, 3, 0.2);
+}
+
+/* ================= TEXTO QUE APARECE AL PASAR EL MOUSE ================= */
+
+.redes-sociales a{
+  position:relative;
+}
+
+.redes-sociales a::after{
+
+  position:absolute;
+  left:60px;
+
+  background:#333;
+  color:white;
+
+  padding:5px 10px;
+  border-radius:5px;
+
+  font-size:14px;
+  white-space:nowrap;
+
+  opacity:0;
+  transform:translateX(-10px);
+
+  transition:all .3s;
+
+}
+
+
+/* ================= MOSTRAR TEXTO ================= */
+
+.redes-sociales a:hover::after{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+/* ================= TEXTO DE CADA ICONO ================= */
+
+.facebook:hover::after{
+  content:"Facebook";
+}
+
+.instagram:hover::after{
+  content:"Instagram";
+}
+
+.tiktok:hover::after{
+  content:"TikTok";
+}
+
+.blog:hover::after{
+  content:"Blog";
+}
+
+
+/* ================= EFECTO COLOR TIKTOK ================= */
+
+.tiktok i{
+
+  text-shadow:
+  2px 2px #ff0050,
+  -2px -2px #00f2ea;
+
+}
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+  .info-box{
+    flex-direction:column;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  nav ul{
+    flex-direction:column;
+    width:100%;
+    display:none;
+  }
+
+  nav ul.active{
+    display:flex;
+  }
+
+  nav ul li{
+    margin:10px 0;
+  }
+
+  .hamburger{
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+  }
+
+  .hamburger span{
+    height:3px;
+    width:25px;
+    background:#fff;
+    margin-bottom:4px;
+    border-radius:5px;
+  }
+
+  .Logo1{
+    float:right;
+    width:60px;
+    height:50px;
+  }
+
+}
