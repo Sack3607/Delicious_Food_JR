@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory
 import requests
-from lector import cargar_conocimiento
+from backend.lector import cargar_conocimiento
 
 # Inicializar Flask y servir frontend
 app = Flask(
