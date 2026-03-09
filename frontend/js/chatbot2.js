@@ -28,7 +28,7 @@ chatBody.scrollTop = chatBody.scrollHeight;
 
 try{
 
-const respuesta = await fetch("http://127.0.0.1:8000/chat",{
+const respuesta = await fetch("https://delicious-food-jr.onrender.com/chat",{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
