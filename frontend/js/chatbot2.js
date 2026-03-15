@@ -17,7 +17,7 @@ ${mensaje}
 
 input.value = "";
 
-// mensaje de "escribiendo"
+// mensaje escribiendo
 chatBody.innerHTML += `
 <div class="bot-msg" id="typing">
 Escribiendo...
@@ -38,15 +38,23 @@ mensaje: mensaje
 })
 });
 
+// verificar si el servidor respondió bien
+if(!respuesta.ok){
+throw new Error("Error del servidor");
+}
+
 const data = await respuesta.json();
 
-// quitar mensaje escribiendo
-document.getElementById("typing").remove();
+console.log("Respuesta backend:", data);
 
-// respuesta bot
+// quitar mensaje escribiendo
+const typing = document.getElementById("typing");
+if(typing) typing.remove();
+
+// mostrar respuesta
 chatBody.innerHTML += `
 <div class="bot-msg">
-${data.respuesta}
+${data.respuesta || "⚠️ No se recibió respuesta"}
 </div>
 `;
 
@@ -54,14 +62,17 @@ chatBody.scrollTop = chatBody.scrollHeight;
 
 }catch(error){
 
-document.getElementById("typing").remove();
+console.error(error);
+
+const typing = document.getElementById("typing");
+if(typing) typing.remove();
 
 chatBody.innerHTML += `
 <div class="bot-msg">
-Error conectando con el servidor
+⚠️ Error conectando con el servidor
 </div>
 `;
 
 }
-
+console.log("Hola");
 }
